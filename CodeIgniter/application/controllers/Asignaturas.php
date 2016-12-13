@@ -51,7 +51,7 @@ class Asignaturas extends CI_Controller {
 		$this->Asignaturas_model->set_asignatura($cod, $nom);
     $this->output
       ->set_content_type('application/json')
-      ->set_output(json_encode(array('mensaje' => 'La asignatura se ha agregado satisfactoriamente.')));
+      ->set_output(json_encode(array('mensaje' => 'La pelicula se ha agregado satisfactoriamente.')));
 	}
 
 	public function editar() {
@@ -62,6 +62,6 @@ class Asignaturas extends CI_Controller {
 		// La asignatura se ha editado satisfactoriamente.
     $this->output
       ->set_content_type('application/json')
-      ->set_output(json_encode(array('mensaje' => 'La asignatura se ha editado satisfactoriamente.')));
+      ->set_output(json_encode(array('mensaje' => 'La pelicula se ha editado satisfactoriamente.')));
 	}
 }

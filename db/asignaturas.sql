@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `asignaturas`
 --
 
-CREATE TABLE IF NOT EXISTS `asignaturas` (
+CREATE TABLE IF NOT EXISTS `peliculas` (
   `codigo` varchar(7) NOT NULL,
   `nombre` varchar(100) NOT NULL,
   `cantidad` int(10) NOT NULL,
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `asignaturas` (
 -- Volcado de datos para la tabla `asignaturas`
 --
 
-INSERT INTO `asignaturas` (`codigo`, `nombre`,`cantidad`) VALUES
+INSERT INTO `pelicuas` (`lista`, `nombre`,`cantidad`) VALUES
 ('1', 'Star Wars VIII', 10),
 ('2', 'Iron Man 3', 20),
 ('3', 'Dragon Ball Z', 30),
