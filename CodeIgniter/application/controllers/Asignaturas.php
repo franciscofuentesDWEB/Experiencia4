@@ -40,7 +40,7 @@ class Asignaturas extends CI_Controller {
 		$this->Asignaturas_model->delete_asignatura($cod);
 		$this->output
 		  ->set_content_type('application/json')
-		  ->set_output(json_encode(array('mensaje' => 'Asignatura eliminada satisfactoriamente.')));
+		  ->set_output(json_encode(array('mensaje' => 'Pelicula eliminada satisfactoriamente.')));
 	}
 
 	public function agregar() {

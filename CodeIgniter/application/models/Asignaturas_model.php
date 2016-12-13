@@ -14,7 +14,7 @@ class Asignaturas_model extends CI_Model {
       'cantidad' => $cant
     );
 
-    $this->db->insert('asignaturas', $data);
+    $this->db->insert('peliculas', $data);
   }
 
   public function delete_asignatura($cod) {
@@ -22,19 +22,19 @@ class Asignaturas_model extends CI_Model {
       'lista' => $lis
     );
 
-    $this->db->delete('asignaturas', $data);
+    $this->db->delete('peliculas', $data);
   }
 
   public function update_asignatura($cod, $nom) {
     $this->db->set('nombre', $nom);
     $this->db->where('cantidad', $cant);
     $this->db->where('lista', $lis);
-    $this->db->update('asignaturas');
+    $this->db->update('peliculas');
   }
 
   public function get_asignaturas() {
     $this->db->select('*');
-    $this->db->from('asignaturas');
+    $this->db->from('peliculas');
     $this->db->order_by('codigo DESC');
     $query = $this->db->get();
 
