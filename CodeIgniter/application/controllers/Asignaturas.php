@@ -44,7 +44,7 @@ class Asignaturas extends CI_Controller {
 	}
 
 	public function agregar() {
-		$cod = $this->input->post('codigo');
+		$lis = $this->input->post('lista');
 		$nom = $this->input->post('nombre');
 		$cant = $this->input->post('cantidad');
 
@@ -55,7 +55,7 @@ class Asignaturas extends CI_Controller {
 	}
 
 	public function editar() {
-		$cod = $this->input->post('codigo');
+		$lis = $this->input->post('lista');
 		$nom = $this->input->post('nombre');
 
 		$this->Asignaturas_model->update_asignatura($cod, $nom);

@@ -38,11 +38,11 @@ CREATE TABLE IF NOT EXISTS `asignaturas` (
 --
 
 INSERT INTO `asignaturas` (`codigo`, `nombre`,`cantidad`) VALUES
-('INC100', 'Cálculo I', 10),
-('INC101', 'Álgebra I v2', 20),
-('INC102', 'Desarrollo Personal I', 30),
-('INC103', 'Test', 40),
-('INC104', 'Maestría Pokemón', 50);
+('1', 'Star Wars VIII', 10),
+('2', 'Iron Man 3', 20),
+('3', 'Dragon Ball Z', 30),
+('4', 'Buscando a Nemito', 40),
+('5', 'Cáncer Memistico', 50);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

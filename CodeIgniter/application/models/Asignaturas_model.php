@@ -9,7 +9,7 @@ class Asignaturas_model extends CI_Model {
 
   public function set_asignatura($cod, $nom) {
     $data = array(
-      'codigo' => $cod,
+      'lista' => $cod,
       'nombre' => $nom,
       'cantidad' => $cant
     );
@@ -19,7 +19,7 @@ class Asignaturas_model extends CI_Model {
 
   public function delete_asignatura($cod) {
     $data = array(
-      'codigo' => $cod
+      'lista' => $lis
     );
 
     $this->db->delete('asignaturas', $data);
@@ -28,7 +28,7 @@ class Asignaturas_model extends CI_Model {
   public function update_asignatura($cod, $nom) {
     $this->db->set('nombre', $nom);
     $this->db->where('cantidad', $cant);
-    $this->db->where('codigo', $cod);
+    $this->db->where('lista', $lis);
     $this->db->update('asignaturas');
   }
 
